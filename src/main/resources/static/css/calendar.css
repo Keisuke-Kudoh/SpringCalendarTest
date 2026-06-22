@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background: #f4f7f6;
+    color: #1f2933;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page {
+    width: min(760px, calc(100% - 32px));
+    margin: 40px auto;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.calendar-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.calendar-form label {
+    display: grid;
+    gap: 6px;
+    font-weight: 600;
+}
+
+.calendar-form input {
+    width: 120px;
+    padding: 8px 10px;
+    border: 1px solid #b8c2cc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.calendar-form button {
+    padding: 9px 20px;
+    border: 0;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgb(15 23 42 / 10%);
+}
+
+.calendar th,
+.calendar td {
+    height: 72px;
+    border: 1px solid #d9e2ec;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.calendar th {
+    height: 44px;
+    background: #e6eef8;
+    font-size: 16px;
+}
+
+.calendar td.weekend {
+    color: #d14343;
+}
+
+.calendar td.today {
+    background: #fff3bf;
+    color: #102a43;
+    font-weight: 800;
+}
+
+@media (max-width: 520px) {
+    .page {
+        margin-top: 24px;
+    }
+
+    .calendar th,
+    .calendar td {
+        height: 52px;
+        font-size: 16px;
+    }
+}
