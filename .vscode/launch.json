@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-SpringCalendarTestApplication<spring-calendar-test>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.calendar.SpringCalendarTestApplication",
+      "projectName": "spring-calendar-test",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
